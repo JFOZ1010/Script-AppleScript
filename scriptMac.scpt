@@ -5,7 +5,7 @@ tell application "Iterm"
         write text "clear"
         write text "cd Library && cd Caches"
         write text "sudo rm -rf *"
-        write text "1235" 
+        write text "yourpassword" --pon aqui tu contraseña :D
         write text "ls"
         write text "cd"
         write text "clear"
@@ -14,12 +14,12 @@ tell application "Iterm"
             tell application "System Events" to keystroke "t" using {command down}
             write text "cd Library && cd Cookies"
             write text "sudo rm -rf *"
-            write text "1235"
+            write text "yourpassword" --pon aqui tu contraseña :D
             write text "ls -a"
             write text "cd" 
             write text "clear"           
             write text "sudo update_dyld_shared_cache -debug && sudo update_dyld_shared_cache -force"
-            write text "1235"
+            write text "yourpassword" --pon aqui tu contraseña :D
             --esperar 20 segundos
             delay 20
             -- command + q para salir y enter para dar ok. 
