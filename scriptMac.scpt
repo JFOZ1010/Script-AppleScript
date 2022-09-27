@@ -14,7 +14,7 @@ tell application "Iterm"
             tell application "System Events" to keystroke "t" using {command down}
             write text "sudo update_dyld_shared_cache -debug && sudo update_dyld_shared_cache -force"
             write text "1235"
-            --esperar 30 segundos
+            --esperar 20 segundos
             delay 20
             -- command + q para salir y enter para dar ok. 
             tell application "System Events" to keystroke "q" using {command down}
