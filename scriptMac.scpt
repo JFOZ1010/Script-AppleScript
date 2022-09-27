@@ -11,7 +11,7 @@ tell application "Iterm"
         write text "sudo rm -rf *"
         --write text "1235"
         write text "cd"
-        writw text "sudo update_dyld_shared_cache -debug"
+        write text "sudo update_dyld_shared_cache -debug"
         write text "sudo update_dyld_shared_cache -force"
 
             tell application "System Events" to keystroke "q" using {command down}
