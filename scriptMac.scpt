@@ -4,14 +4,20 @@ tell application "Iterm"
         write text "pwd"
         write text "clear"
         write text "cd Library && cd Caches"
-        write text "sudo rm -rf * | cd .."
+        write text "sudo rm -rf *"
         write text "1235" 
-        write text "cd Cookies"
-        write text "sudo rm -rf * | cd .."
-        write text "1235"
-        write text "ls -a"
-
+        write text "ls"
+        write text "cd"
+        write text "clear"
+            
+            -- Limpiar carpeta Cookies
             tell application "System Events" to keystroke "t" using {command down}
+            write text "cd Library && cd Cookies"
+            write text "sudo rm -rf *"
+            write text "1235"
+            write text "ls -a"
+            write text "cd" 
+            write text "clear"           
             write text "sudo update_dyld_shared_cache -debug && sudo update_dyld_shared_cache -force"
             write text "1235"
             --esperar 20 segundos
